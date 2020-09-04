@@ -13,12 +13,22 @@ body {
 }
 
 h1 {
+    /*1、给一级标题和二级标题设置字体为：Georgia*/
+    font-family: Georgia;
+    /*3、给一级标题设置居中显示.*/
+    text-align: center;
+    /*4、给一级标题设置字母全大写显示.*/
+    text-transform: uppercase;
     color: #fff;
     font-size: 2em;
     width: 100%;
 }
 
 h2 {
+    /*1、给一级标题和二级标题设置字体为：Georgia*/
+    font-family: Georgia;
+    /*5、给二级标题设置首字母大写显示.*/
+    text-transform: capitalize;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     color: rgba(255, 255, 255, 0.5);
     font-weight: 100;
@@ -29,19 +39,38 @@ h2 {
 }
 
 p {
+    /*2、 给段落设置字体为：Helvetica.*/
+    font-family:  Helvetica;
+    /*6、给段落设置字体大小为：18px.*/
+    font-size: 18px;
+    
+
     color: AliceBlue;
     line-height: 1.3em;
     text-align: left;
     width: 100%;
 }
+/*7、 给段落第一行字体加粗.*/
+p::first-line{
+    font-weight: bold;
+}
 
 .image {
+    /*8、给 `.image` 设置背景图片（使用img文件夹下面的图片）. */
     background-size: cover;
     background-position: center;
     height: 300px;
+    background-image: url(../img/background-img.jpg);
 }
 
 .caption {
+    /*9、给 `.caption` 设置背景色为白色，然后设置字体颜色为黑色.*/
+    background-color: #fff;
+    color: #000000;
+    /* 10、给 `.caption` 设置透明度为0.75.*/
+    opacity: 0.75;
+    /*11、给 `.caption` 设置字体样式为斜体.*/
+    font-style: italic;
     display: block;
     font-family: 'Playfair Display', serif;
     font-size: 14px;
@@ -51,5 +80,10 @@ p {
     position: relative;
     top: 80%;
     width: 60%;
+}
+/*12、给 `.caption a` 设置鼠标hover 上去的样式，去掉下横线，颜色变成紫色*/
+.caption a:hover{
+    text-decoration: none;
+    color: purple;
 }
 

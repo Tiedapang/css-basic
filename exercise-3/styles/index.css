@@ -10,6 +10,8 @@ body {
 }
 
 .navigation li {
+    /*4、设置 `.navigation li` elements to have 10 pixels of padding.*/
+    padding: 10px;
     font-weight: 100;
     letter-spacing: 2px;
 }
@@ -22,6 +24,8 @@ body {
 }
 
 #banner {
+    /* 1、设 `#banner` 高度为350px.*/
+    height: 350px;
     background-image: url("../img/background-img.jpeg");
     background-size: cover;
     background-position: bottom center;
@@ -29,6 +33,8 @@ body {
 }
 
 h1 {
+    /*2、给 `h1` 添加 border style, 样式参考mockup.*/
+    border-style: solid;
     position: relative;
     top: 50px;
     width: 400px;
@@ -42,6 +48,12 @@ h1 {
 #main {
     padding: 40px;
     text-align: center;
+    /*11、设置 `#main` 的 `margin` 使其内容水平居中 */
+    margin: auto;
+    /*12、设置 `#main` 宽度为500px, 高度为800px, 并且超出可以滚动.*/
+    width: 500px;
+    overflow-x: auto;
+   
 }
 
 h2 {
@@ -52,6 +64,12 @@ h2 {
 }
 
 h3 {
+    /*3、设置 `h3` border 样式参考mockup.*/
+    border: dotted;
+    /*8、使用简写, 设置 `h3` 上下 margins 30 px, 左右 margins 20 px.*/
+    margin: 30px 20px;
+    /*9、使用简写, 设置 `h3` 上下 padding 20 px, 左右 padding 30 px.*/
+    padding: 20px 30px;
     color: red;
     font-size: 14px;
     line-height: 48px;
@@ -59,6 +77,8 @@ h3 {
 }
 
 p {
+    /*6、设置每个段落向上 margin 为 40 px.*/
+    margin-top: 40px;
     padding: 10px 20px;
     color: grey;
     font-size: 16px;
@@ -66,7 +86,9 @@ p {
 }
 
 .pull-quote {
-
+    /*10、设置 `.pull-quote` 的宽度为 400 px. 并且通过 `margin` 使其水平居中.*/
+    width: 400px;
+    margin: auto;
 }
 
 .byline {
@@ -86,6 +108,10 @@ p {
 }
 
 .share a {
+    /*5、设置 `.share a` elements to have 14 pixels of padding.*/
+    padding: 14px;
+    /* 7、设置 `.share a ` margin 为 10 px.*/
+    margin: 10px;
     background: red;
     border: 1px solid red;
     border-radius: 3px;

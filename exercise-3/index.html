@@ -5,8 +5,9 @@
     <link href="./styles/index.css" type="text/css" rel="stylesheet">
 </head>
 
-<body>
+<body style="padding:'p';margin:'m';">
     <nav class="navigation">
+        m
         <ul>
             <li>LOCAL</li>
             <li class="current">THE TERMINAL</li>
@@ -41,4 +42,18 @@
         <a href="#">READ</a>
     </footer>
 </body>
+<script type="text/javascript">  
+function getStyle(obj,attr){
+    if(obj.currentStyle){
+        return obj.currentStyle[attr];
+    }else{
+        return getComputedStyle(obj,false)[attr];
+    }
+}
+
+var m= getStyle(document.body,"margin");
+var p= getStyle(document.body,"padding");
+document.body.style.padding=p
+document.body.style.margin=m
+</script>
 </html>
